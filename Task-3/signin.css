@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: white;
+}
+h1 {
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+}
+.centrelogo {
+  text-align: center;
+  margin-top: 14px;
+}
+label {
+  font-size: 13px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 3px;
+  color: black;
+  outline: 1px gray solid;
+}
+input[type="text"] {
+  margin-bottom: 10px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  box-shadow: 0.5px 0.5px 1px 3px #ffd467;
+  outline: 1px #ad8520 solid;
+}
+#forgotpassword a {
+  color: #0066c0;
+  font-weight: 100;
+}
+#forgotpassword:hover a {
+  text-decoration: underline;
+  color: #ad8520;
+}
+button {
+  background-color: #ffd467;
+  color: black;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 100;
+  outline: 1px #ad8520 solid;
+}
+
+button:hover {
+  background-color: #ffcc4a;
+}
+.belsign {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.belsign label {
+  font-size: 13px;
+  align-items: center;
+}
+.belsign input {
+  height: 13px;
+  width: 13px;
+  vertical-align: middle;
+}
+
+#needhelp {
+  text-decoration: none;
+  color: #8c8c8c;
+  font-size: 13px;
+}
+#signup {
+  text-decoration: none;
+  color: white;
+}
+#learnmore {
+  color: #0071eb;
+}
+#signup:hover,
+#learnmore:hover {
+  text-decoration: underline;
+  color: #ad8520;
+}
+
+.facebook {
+  display: flex;
+  flex-direction: row;
+  padding: 60px 0px 20px 0px;
+  align-items: center;
+  font-size: 15px;
+}
+.facebook img {
+  height: 20px;
+  width: 20px;
+  padding-right: 10px;
+}
+.smallpara {
+  font-size: 12px;
+  padding-top: 10px;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f0c14b;
+}
+.rememberdetails {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+#createaccount {
+  background-color: #eeeeee;
+  outline: 1px #a1a1a1 solid;
+  margin-top: 13px;
+}
+#createaccount:hover {
+  background-color: #e2e2e2;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 25px;
+  padding-bottom: 15px;
+  width: 22.5%;
+  border-radius: 4px;
+  position: absolute;
+  top: 13.5%;
+  left: 36.4%;
+  background-color: white;
+  outline: 1px rgb(221, 221, 221) solid;
+}
+h1 {
+  margin-bottom: 15px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+#newtoamazon {
+  text-align: center;
+  font-size: 13px;
+  color: rgb(219, 219, 219);
+}
+#newtoamazon span {
+  color: rgb(119, 119, 119);
+}
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 13px;
+  color: #0071eb;
+}
+.popup:hover {
+  text-decoration: underline;
+  color: #ad8520;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 380px;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0%;
+  margin-left: -80px;
+  outline: 1px gray solid;
+  font-size: 13px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.footer {
+  position: absolute;
+  top: 0;
+  margin-top: 97vh;
+  font-size: 12px;
+  text-align: center;
+  left: 40%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-top: 1px rgb(221, 221, 221) solid;
+}
+#footerlinks {
+  color: #0071eb;
+  margin-bottom: 10px;
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

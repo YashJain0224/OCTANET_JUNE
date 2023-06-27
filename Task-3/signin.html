@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signin.css" />
+    <link rel="icon" href="assets/amazon fevicon.png" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Amazon Sign-In</title>
+  </head>
+  <body>
+    <div class="centrelogo">
+      <img src="assets/prime video logo(black).png" alt="" />
+    </div>
+    <div>
+      <form action="moviezone.html" method="get">
+        <div class="container">
+          <h1>Sign-In</h1>
+          <label for="uname"><b>Email or mobile phone number </b></label>
+
+          <input
+            type="text"
+            required
+            name="uname"
+            pattern="^([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})|(\d{10})$"
+          />
+          <label for="uname"
+            ><b
+              >Password &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span id="forgotpassword"
+                ><a href="#">Forgot your Password?</a></span
+              ></b
+            ></label
+          >
+          <input type="password" name="psw" required />
+
+          <button type="submit">Sign-In</button>
+          <div class="smallpara">
+            <p>
+              By continuing, you agree to Amazon's
+              <a href="#"> <span id="learnmore">Conditions of Use</span></a> and
+              <a href="#"> <span id="learnmore">Privacy Notice</span></a
+              >.
+            </p>
+          </div>
+          <div class="rememberdetails">
+            <div class="belsign">
+              <label>
+                <input type="checkbox" name="remember" />
+                Keep me signed in. &nbsp;
+              </label>
+            </div>
+            <div class="popup" onclick="popUp()">
+              Details ▾
+              <span class="popuptext" id="myPopup"
+                >Choosing "Keep me signed in" reduces the number of times you're
+                <br />
+                asked to Sign-In on this device. <br /><br />To keep your
+                account secure, use this option only on your personal <br />
+                devices.</span
+              >
+            </div>
+          </div>
+          <div id="newtoamazon">
+            <p>
+              --------------------<span>New to Amazon?</span
+              >--------------------
+            </p>
+          </div>
+          <div>
+            <button href="#" id="createaccount">
+              Create your Amazon account
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer class="footer">
+      <div>
+        <div id="footerlinks">
+          <p>
+            Conditions of Use &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Privacy
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Notice Help
+          </p>
+        </div>
+        <div><p>© 1996-2021, Amazon.com, Inc. or its affiliates</p></div>
+      </div>
+    </footer>
+    <script src="home.js"></script>
+  </body>
+</html>
